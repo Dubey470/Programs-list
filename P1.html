@@ -1,0 +1,56 @@
+<!-- Program 1:- Create a HTML form that has number of textboxes. When the form runs in 
+browser, fill the textbox with data. Write JS code that varifies that all the textboxes 
+are filled. If any of the textboxes are not filled, pop an alert indicating which boxes
+have been left empty.
+1)First Name     4)Adress
+2)Last name      5)E-mail ID
+3)Mobile No.     6)Pincode    -->
+
+<html>
+    <head>
+        <title>Lab_Program_1</title>
+        <script type="text/javascript" src="P1.js"></script>
+    </head>
+    <body>
+        <hr>
+        <h2>Textbox Fill</h2>
+        <hr/>
+        <form name="textboxform">
+            <table cellpadding="5" cellspacing="5">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="F_name"></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="L_name"></td>
+                </tr>
+                
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="Mobile"></td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="Address"></td>
+                </tr>
+
+                <tr>
+                    <td>Pin Code</td>
+                    <td><input type="text" name="Pincode"></td>
+                </tr>
+
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="text" name="Email"></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><input type="button" name="count" value="Check Textboxes" onclick="check()"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
