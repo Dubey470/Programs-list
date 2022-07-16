@@ -1,0 +1,47 @@
+<!-- Program 2:- Develope a HTML form which accepts any mathematical expression.
+Write JS code to evaluate the expression and display the result. -->
+
+<html>
+    <head>
+        <title>Lab_Program_2</title>
+        <script type="text/javascript" src="P2.js"></script>
+    </head>
+    <body bgcolor="lightblue">
+        <center>
+            <h2>Arithmetic operations</h2>
+            <hr/><br/>
+            <form name="mathform">
+                <table border="1" cellpadding="5" cellspacing="5">
+                    <tr>
+                        <th>enter the first operand</th>
+                        <th>select the operation</th>
+                        <th>enter the second operand</th>
+                        <th>result</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="op1"></td>
+                        <td>
+                            <select name="operator">
+                                <option name="sum" value="+">+</option>
+                                <option name="diff" value="-">-</option>
+                                <option name="prod" value="*">*</option>
+                                <option name="div" value="/">/</option>
+                                <option name="mod" value="%">%</option>
+                                <option name="exp" value="exp">exp</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="op2"/></td>
+                        <td><input type="text" name="result"/></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4" align="center">
+                            <input type="button" name="calresult" value="calculate" onclick="calculate()"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

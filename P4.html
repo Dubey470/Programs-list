@@ -1,0 +1,40 @@
+<!-- Program 4:- Create a form for Employee Information. 
+Write JavaScript code to find DA, HRA, PF, Tax, Gross Pay, Deduction and Net Pay. -->
+
+<html>
+    <head>
+        <title>Lab_Program_4</title>
+        <script type="text/javascript" src="P4.js"></script>
+    </head>
+    <body>
+        <center>
+            <hr>
+            <h2>Employee Details</h2>
+            <hr/><br/>
+            <h4>Please Fill in the following Employee Details:- </h4>
+            <hr/><br/>
+            <form name="employee">
+                <table cellpadding="5" cellspacing="5">
+                    <tr>
+                        <td>Employee Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Employee Number:</td>
+                        <td><input type="text" name="empno"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Basic Pay:</td>
+                        <td><input type="text" name="basicpay"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center"><input type="button" name="details" value="View Salary Details" onclick="calculate()"/></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

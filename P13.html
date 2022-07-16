@@ -1,0 +1,22 @@
+<!-- Program 13:- Create a webpage to access object properties using PROPERTY. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_13</title>
+</head>
+<body style="font-size:30px">
+    <p>There are two different ways to access an object property:</p>
+    <p>you can use:-<br/><br/>person.property<br/>OR<br/>person["property"]<br/><br/></p>
+    <p>Below is an Example Code:-<br/> "("+person["regno"]+") - "+person.firstname+" "+person["middlename"]+" "+person.lastname;</p>
+    <p id="demo"></p>
+    <script>
+        var person={
+            firstname: "Paurush",
+            middlename: "Kumar",
+            lastname: "Bansal",
+            regno: "R1911673"
+        };
+        document.getElementById("demo").innerHTML="Result:-<br/>("+person["regno"]+") - "+person.firstname+" "+person["middlename"]+" "+person.lastname;
+    </script>
+</body>
+</html>

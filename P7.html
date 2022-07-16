@@ -1,0 +1,20 @@
+<!-- Program 7:- Create a webpage to search for an experssion and replace it using pattern matching. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_7</title>
+</head>
+<body style="font-size:30px">
+    <p>Replace "microsoft" with "BCA" in the paragraph below!</p>
+    <button style="font-size: 30px;" onclick="myfunction()">Try it</button>
+    <p id="demo">Please visit Microsoft!</p>
+    <script>
+        function myfunction()
+        {
+            var str=document.getElementById("demo").innerHTML;
+            var txt=str.replace(/microsoft/i,"BCA");
+            document.getElementById("demo").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

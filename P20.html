@@ -1,0 +1,56 @@
+<!-- Program 20:- Create a page with dynamic effect, 
+Write the code to include layers and basic animation. -->
+
+<html>
+    <head>   
+        <title>Lab_Program_20</title>
+        <script type="text/javascript" src="P20.js"></script>
+        <style type="text/css">
+            #layer1
+            {
+                background-color: red;
+                color: white;
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                left: 50px;
+                top: 200px;
+            }
+            #layer2
+            {
+                background-color: green;
+                color: white;
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                left: 75px;
+                top: 225px;
+            }
+            #layer3
+            {
+                background-color: blue;
+                color: white;
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                left: 100px;
+                top: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Basic Animation</h2>
+        <hr/><br/>
+        <p id="layer1"> layer 1 is red colour </p>
+        <p id="layer2"> layer 2 is green colour </p>
+        <p id="layer3"> layer 3 is blue colour </p>
+        <form name="animationform">
+            <input type="button" name="ani1" value="Move red towards right" onclick="movered()"/>
+            <input type="button" name="ani2" value="Move green towards right" onclick="movegreen()"/>
+            <input type="button" name="ani3" value="Move blue towards right" onclick="moveblue()"/>
+            <hr/>
+            <input type="button" name="ani4" value="show green layer" onclick="showgreen(true)"/>
+            <input type="button" name="ani5" value="hide green layer" onclick="showgreen(false)"/>
+        </form>
+    </body>
+</html>

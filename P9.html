@@ -1,0 +1,50 @@
+<!-- Program 9:- Write a program to convert lowercase string to uppercase string. -->
+
+    <!DOCTYPE html>
+    <head>
+        <title>Lab_Program_9</title>
+        <script type="text/javascript">
+            function conversion()
+            {
+                var orgtext=document.caseconversion.content.value;
+                var convtext;
+                var lc=/[a-z]/;
+                var uc=/[A-Z]/;
+
+                if((orgtext.search(uc)==-1) && (orgtext.search(lc)!=-1))
+                {
+                    convtext=orgtext.toUpperCase();
+                    alert("Converted text is: "+convtext);
+                }
+                else if((orgtext.search(uc)!=-1) && (orgtext.search(lc)==-1))
+                {
+                    alert("Text already in UpperCase");
+                }
+                else
+                {
+                    convtext=orgtext.toUpperCase();
+                    alert("Test contains Mixed form of Characters and the Converted text is:\n"+convtext);
+                }
+            }
+        </script>
+    </head>
+    <body style="font-size:20px">
+        <center>
+            <h2>LowerCase to UpperCase</h2>
+            <hr/><br/><br/>
+            <form name="caseconversion">
+                <table border="2" cellpadding="5" cellspacing="5">
+                    <tr>
+                        <td><strong>Enter the Text: </strong></td>
+                        <td><input type="text" name="content"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button" name="convert" value="Click to Convert to UpperCase" onclick="conversion()"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+    </html>

@@ -1,0 +1,35 @@
+<!-- Program 8:- Create a webpage using two image files, which switch between one another
+    as the mouse pointer moves over the image. Use the onmouseover and onmouseout event handelers. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_8</title>
+    <script type="text/javascript" src="P8.js"></script>
+    <style type="text/css">
+        #image1
+        {
+            position: absolute;
+            visibility: visible;
+            width: 300px;
+            height: 300px;
+            left: 500px;
+        }
+        #image2
+        {
+            position: absolute;
+            visibility: hidden;
+            width: 300px;
+            height: 300px;
+            left: 500px;
+        }
+    </style>
+</head>
+<body style="font-size:20px">
+    <center>
+        <h2>Mouseover and Mouseout</h2>
+        <hr/><br/><br/>
+        <img src="winter2.jpg" id="image1" onmouseover="changeImage()" onmouseout="changeImage()"/>;
+        <img src="winter6.jpg" id="image2" onmouseover="changeImage()" onmouseout="changeImage()"/>;
+    </center>
+</body>
+</html>

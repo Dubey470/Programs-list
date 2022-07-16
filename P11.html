@@ -1,0 +1,44 @@
+<!-- Program 11:- Write a JavaScript to Calculate the Factorial of a number. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_11</title>
+    <script type="text/javascript">
+        function factorial()
+        {
+            var n=parseInt(document.factorialofn.inputvalue.value);
+            var fact=1;
+
+            if(n<0)
+                alert("Please Enter a Positive Value");
+            else if(n==0)
+                alert("Factorial of 0 is:\n"+1);
+            else
+            {
+                for(i=n;i>=1;i--)
+                    fact=fact*i;
+                alert("Factorial of "+n+" is:\n"+fact);
+            }
+        }
+    </script>
+</head>
+<body style="font-size:20px">
+    <center>
+        <h2>Factorial of a Number</h2>
+        <hr/><br/><br/>
+        <form name="factorialofn">
+            <table border="2" cellpadding="5" cellspacing="5">
+                <tr>
+                    <td><strong>Enter a number: </strong></td>
+                    <td><input type="text" name="inputvalue"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" name="factcal" value="Factorial" onclick="factorial()"
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

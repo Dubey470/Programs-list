@@ -1,0 +1,22 @@
+<!-- Program 15:- Create a webpage to illustrate the working of FOR loop with CONTINUE statement. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_15</title>
+</head>
+<body style="font-size:30px">
+    <p>A Loop which will skip the step where i=3</p>
+    <p id="demo"></p>
+    <script>
+        var text=" ";
+        var i;
+        for(i=0;i<10;i++)
+        {
+            if(i==3)
+                continue;
+            text+="The Number is: " +i+ "<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

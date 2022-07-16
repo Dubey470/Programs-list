@@ -1,0 +1,22 @@
+<!-- Program 10:- Create a webpage to display mouse position. -->
+
+<!DOCTYPE html>
+<head>
+    <title>Lab_Program_10</title>
+    <script type="text/javascript">
+        function FindMousePosition(evt)
+        {
+            document.getElementById("showXY").value="Client X="+evt.clientX+"Client Y="+evt.clientY+"Screen X="+evt.screenX+"Screen Y="+evt.screenY;
+        }
+    </script>
+</head>
+<body style="font-size:50px" onmousemove="FindMousePosition(event)">
+    <center>
+        <h2>Mouse Position</h2>
+        <hr/><br/><br/>
+        <form>
+             Mouse Position are:<input type="text" id="showXY" size="50"/>
+        </form>
+    </center>
+</body>
+</html>
