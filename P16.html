@@ -1,0 +1,17 @@
+<! Create a webpage to find position of the first occurence of a text in a string using indexOf() -->
+<!DOChtml>TYPE>
+<html>
+<body>
+<p id="p1">Please locate where 'locate' occurs </p>
+<button onclick="myfunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myfunction()
+{
+var str=document.getElementById("p1").innerHTML;
+var pos=str.indexOf("locate");
+document.getElementById("demo").innerHTML=pos;
+}
+</script>
+</body>
+</html>
